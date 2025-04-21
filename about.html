@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveEazy - Smooth Moving & Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/home"><img src="https://i.imgur.com/ocTusnm.png" alt="MoveEazy Logo"></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <div class="story-section">
+            <div class="content">
+                <h2>Our Story</h2>
+                <p>
+                    Founded in Victoria, MoveEazy began with a vision to simplify the moving process for families and businesses alike. What started as a small operation has grown into a trusted name across the state, known for our commitment to reliability and customer satisfaction. We take pride in every move, ensuring your belongings are handled with care and delivered on time.
+                </p>
+            </div>
+            <div class="image">
+                Company Image (Unavailable)
+            </div>
+        </div>
+
+        <div class="mission-section">
+            <h2>Our Mission & Values</h2>
+            <p>
+                At MoveEazy, our mission is to provide stress-free moving and delivery solutions that exceed expectations. We value reliability, efficiency, and transparency, ensuring every customer feels confident in our services. Our team is driven by a passion for helping you transition to your new space with ease.
+            </p>
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 MoveEazy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('open');
+        });
+
+        // Add scrolled class to header on scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
